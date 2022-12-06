@@ -15,8 +15,8 @@ Lets create your project, **you will not clone this repo**, just follow the inst
 ```
 mkdir myproject
 cd myproject
-python -m venv .venv
-source .venv/bin/activate
+python3 -m venv .venv or python -m venv .venv
+source .venv/bin/activate or .venv/Scripts/activate
 pip install django
 ```
 
@@ -25,6 +25,7 @@ Now we can pull Django Boilerplate Structure to Project
 ```
 django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/main.zip --name=.env-sample myproject .
 ```
+
 
 And then, proceed with the installation of the requirements. 
 
@@ -41,3 +42,10 @@ pip install -r requirements.txt
 python .\manage.py check
 python .\manage.py migrate
 python .\manage.py collectstatic
+
+
+
+MENU 
+https://github.com/HBNetwork/django-boilerplate/archive/main.zip
+Base (main.zip)
+com-app (com-app.zip)
