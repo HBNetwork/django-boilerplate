@@ -23,15 +23,19 @@ pip install django
 Now we can pull Django Boilerplate Structure to Project 
 
 ```
-django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/main.zip --name=.env-sample myproject .
+django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/devtools.zip --name=.env-sample,pytest.ini  myproject .
 ```
 
 
 And then, proceed with the installation of the requirements. 
 
+### [PROD]
 ```
-
 pip install -r requirements.txt
+```
+### [DEV]
+```
+pip install -r requirements-dev.txt
 ```
 
 
@@ -39,13 +43,8 @@ pip install -r requirements.txt
 - rename .env-sample to .env and adjust settings accordingly
 
 ## Tips
-python .\manage.py check
-python .\manage.py migrate
-python .\manage.py collectstatic
+- python manage.py check  
+- python manage.py migrate  
+- python manage.py collectstatic  
 
 
-
-MENU 
-https://github.com/HBNetwork/django-boilerplate/archive/main.zip
-Base (main.zip)
-com-app (com-app.zip)
