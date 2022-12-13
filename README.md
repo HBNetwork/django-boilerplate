@@ -11,7 +11,7 @@ This template includes:
 * [Pytest](https://docs.pytest.org/)
 * [Pytest-django](https://pytest-django.readthedocs.io/en/latest/)
 * [Pytest-cov](https://github.com/pytest-dev/pytest-cov)
-* [Bootstrao@5.2.3](https://getbootstrap.com/docs/5.2/)
+* [Bootstrap@5.2.3](https://getbootstrap.com/docs/5.2/)
 
 
 ## Usage
@@ -42,7 +42,7 @@ pip install django
 Now we can pull Django Boilerplate Structure to Project 
 
 ```
-django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/with-app.zip --name=.env-sample,pytest.ini  myproject .
+django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/with-app-bootstrap.zip --name=.env-sample,pytest.ini  myproject .
 ```
 
 
@@ -72,7 +72,6 @@ pip install -r requirements-dev.txt
 ## Future possibilities
 - Poetry
 - Containers (Docker)
-- Bootstrap (5.2)
 - Pre-commit hooks
 - Github actions
 
