@@ -1,4 +1,4 @@
-# Django-boilerplate with App Core - HBNetwork
+# Django-boilerplate with App Core and start base index in bootstrap 5.2- HBNetwork
 
 
 ### Deploy a fully configured Django Application the fastest way!
@@ -11,6 +11,7 @@ This template includes:
 * [Pytest](https://docs.pytest.org/)
 * [Pytest-django](https://pytest-django.readthedocs.io/en/latest/)
 * [Pytest-cov](https://github.com/pytest-dev/pytest-cov)
+* [Bootstrao@5.2.3](https://getbootstrap.com/docs/5.2/)
 
 
 ## Usage
