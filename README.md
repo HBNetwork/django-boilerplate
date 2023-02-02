@@ -63,6 +63,7 @@ pip install -r requirements-dev.txt
 
 ## Tips
 - python manage.py check  
+- python manage.py runserver  
 - python manage.py migrate  
 - python manage.py collectstatic  
 
