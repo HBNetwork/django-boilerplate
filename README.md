@@ -44,7 +44,7 @@ pip install django
 Now we can pull Django Boilerplate Structure to Project 
 
 ```
-django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/with-app.zip --name=.env,pytest.ini  myproject .
+django-admin startproject --template https://github.com/HBNetwork/django-boilerplate/archive/main.zip --name=.env,pytest.ini  myproject .
 ```
 
 
