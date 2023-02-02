@@ -1,5 +1,6 @@
-# Django-boilerplate with App Core - HBNetwork
+# Django-boilerplate with App Core Configured - HBNetwork
 
+Following the instructions bellow to create a fast project Django configured with a app core.
 
 ### Deploy a fully configured Django Application the fastest way!
 
@@ -26,6 +27,7 @@ mkdir myproject
 cd myproject
 python3 -m venv .venv 
 source .venv/bin/activate
+pip install --upgrade pip
 pip install django
 ```
 
@@ -35,6 +37,7 @@ mkdir myproject
 cd myproject
 python -m venv .venv
 .venv\Scripts\activate
+python -m pip install --upgrade pip
 pip install django
 ```
 
