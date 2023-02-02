@@ -81,6 +81,12 @@ target/
 profile_default/
 ipython_config.py
 
+# PhpStorm
+.idea
+
+# VSCode
+.vscode
+
 # pyenv
 .python-version
 
@@ -102,7 +108,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+#.env
 .venv
 env/
 venv/
