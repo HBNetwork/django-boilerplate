@@ -48,7 +48,7 @@ django-admin startproject --template https://github.com/HBNetwork/django-boilerp
 ```
 
 
-And then, proceed with the installation of the requirements.
+And then, proceed with the installation of the requirements and pre-commit enable hooks.
 
 ### [PROD]
 ```
@@ -59,6 +59,7 @@ pip install -r requirements.txt
 ### [DEV]
 ```
 pip install -r requirements-dev.txt
+pre-commit install
 ```
 
 ## Tips
