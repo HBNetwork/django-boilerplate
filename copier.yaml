@@ -1,0 +1,35 @@
+# questions
+project_name:
+    type: str
+    help: What is your project name?
+
+app_name:
+    type: str
+    help: What is your first app name?
+    default: core
+
+package_name:
+    type: str
+    default: "{{project_name|lower|replace('_', '-')|replace(' ', '-')}}"
+
+package_version:
+    type: str
+    default: 1.0.0
+
+package_description:
+    type: str
+
+package_author:
+    type: str
+    help: "First Last <first@email.com>"
+
+package_module:
+    type: str
+    default: "{{project_name}}"
+
+_tasks:
+  - "poetry install"
+  - "git init"
+  - "pre-commit install"
+  - "git add ."
+  - "git commit -m Initial"

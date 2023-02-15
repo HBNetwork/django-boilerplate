@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "{{package_name}}"
+version = "{{package_version}}"
+description = "{{package_description}}"
+authors = ["{{package_author}}"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "{{package_module}}"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.1.7"
+python-decouple = "^3.6"
+dj-database-url = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-django = "^4.5.2"
+pre-commit = "^3.0.4"
+
+[tool.poetry.scripts]
+manage = "manage:main"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "{{project_name}}.settings"
+addopts = "-s"
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
