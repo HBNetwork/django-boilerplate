@@ -29,7 +29,7 @@ package_module:
 
 _tasks:
   - "poetry install"
-  - "git init"
+  - "git init -b main"
   - "pre-commit install"
   - "git add ."
   - "git commit -m Initial"
