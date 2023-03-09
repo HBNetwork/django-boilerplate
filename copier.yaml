@@ -31,5 +31,6 @@ _tasks:
   - "poetry install"
   - "git init -b main"
   - "poetry run pre-commit install"
+  - "rm README.md"
   - "git add ."
   - "git commit -m Initial"
