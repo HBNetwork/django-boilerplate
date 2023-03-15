@@ -10,27 +10,39 @@ app_name:
 
 package_name:
     type: str
+    help: What is your package name?
     default: "{{project_name|lower|replace('_', '-')|replace(' ', '-')}}"
 
 package_version:
     type: str
+    help: What is your package version?
     default: 1.0.0
 
 package_description:
+    help: What is your package description?
     type: str
 
-package_author:
+package_author_name:
     type: str
-    help: "First Last <first@email.com>"
+    help: What is your name?
+    
+package_author_email:
+    type: str
+    help: What is your email?
+
 
 package_module:
     type: str
+    help: What is your package module?
     default: "{{project_name}}"
+
+
+_exclude: ["copier.yaml", "copier.yml", "~*", "*.py[co]", "__pycache__", ".git", ".DS_Store", ".svn", "README.md"]
+
 
 _tasks:
   - "poetry install"
   - "git init -b main"
   - "poetry run pre-commit install"
-  - "rm README.md"
   - "git add ."
   - "git commit -m Initial"
