@@ -26,45 +26,59 @@ Lets create your project, **you will not clone this repo**, just follow the inst
 ```
 pip install --upgrade pip  
 ```
-* Install the lib **[copier](https://copier.readthedocs.io/en/stable/)**
- in your system  
+* Install the lib **[copier](https://copier.readthedocs.io/en/stable/)**  in your system  
+* Using Python ^3.8
+* Git version ^2.28
+
+* Copier
 ```
 pip install copier
 ```
- * Using Python ^3.11
- * Poetry  
+
+* Poetry  
 ```
 pip install poetry
+
 ```
- * Pre-commit
- ```
+* Pre-commit
+```
 pip install pre-commit  
+
 ```
 
-**STEP By STEP**: 
+## STEPS: 
+
 * Adjust the config virtualenvs to save *.venv* inside in your folder project
+
 ```
 $ poetry config virtualenvs.in-project true
+
 ```
 
-* Using command copier to create the folder project and copy any file in origin repository and replace values dynamically using the CLI Questionaries
+* Using command **copier** to create the folder project and copy any file in origin repository and replace values dynamically using the CLI 
+Questionaries
 
+**RUN COMAND ...>**
 ```
 copier https://github.com/HBNetwork/django-boilerplate path/to/project_folder
 
 ```
-Ansewered the CLI Questionary:
+
+## The CLI Questionary:
 * What is your project name?
-* What is your first app name? (Default is core)
-* package_name (same your project name)
-* package_version (default 1.0.0)
-* package_description (default none)
-* Author this project First Last <first@email.com> (You must inform the same way Name <email>)
-* package_module (same your project name)
-* Wait for a few minutes to install all apps and finish the process
+* What is your first app name? (default is core)
+* What is your package name? (same your project name)
+* What is your package version? (default 1.0.0)
+* What is your package description? (default none)
+* What is your name? (author)
+* What is your email? (author)
+* What is your package module? (same your project name)
+* Wait for a few minutes to install all apps and finish the process. You need to create your README.md file
 
+-----------------------------
 
-## Instruction to run the project
+## Instruction to run the new project
+
 ### Linux and Mac
 ```
 cd path/to/project_folder
@@ -89,5 +103,3 @@ python manage.py runserver
 - python manage.py runserver
 - python manage.py migrate
 - python manage.py collectstatic
-
-

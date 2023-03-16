@@ -2,6 +2,7 @@
 project_name:
     type: str
     help: What is your project name?
+    placeholder: "myproject"
 
 app_name:
     type: str
@@ -19,8 +20,10 @@ package_version:
     default: 1.0.0
 
 package_description:
-    help: What is your package description?
     type: str
+    help: What is your package description?
+    placeholder: "A short description of the project"
+
 
 package_author_name:
     type: str
@@ -30,15 +33,14 @@ package_author_email:
     type: str
     help: What is your email?
 
-
 package_module:
     type: str
     help: What is your package module?
     default: "{{project_name}}"
 
-
 _exclude: ["copier.yaml", "copier.yml", "~*", "*.py[co]", "__pycache__", ".git", ".DS_Store", ".svn", "README.md"]
 
+_answers_file: .my-custom-answers.yml
 
 _tasks:
   - "poetry install"
